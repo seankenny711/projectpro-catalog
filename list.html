@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Bathroom Project List</title>
+<meta property="og:title" content="Your bathroom project list from Hank">
+<meta property="og:description" content="Every item for your bathroom refresh, grouped by stage, with an estimated total.">
+<style>
+  :root {
+    --bg: #f6f4f1; --card: #ffffff; --ink: #1d1b19; --muted: #6b655e;
+    --line: #e4dfd8; --accent: #2f5d50; --accent-soft: #e6efec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161514; --card: #201f1d; --ink: #f2efeb; --muted: #a8a19a;
+            --line: #34312e; --accent: #7fb8a6; --accent-soft: #24302c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  header h1 { font-size: 26px; line-height: 1.2; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--muted); }
+  .total { margin: 20px 0 8px; padding: 16px; background: var(--accent-soft);
+           border-radius: 12px; display: flex; justify-content: space-between; align-items: baseline; }
+  .total span { color: var(--muted); }
+  .total strong { font-size: 24px; color: var(--accent); }
+  h2 { font-size: 13px; letter-spacing: .06em; text-transform: uppercase;
+       color: var(--muted); margin: 28px 0 8px; }
+  .item { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+          padding: 14px 16px; margin-bottom: 10px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .name { font-weight: 600; }
+  .price { font-weight: 600; white-space: nowrap; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .tier { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 999px;
+          border: 1px solid var(--line); margin-right: 6px; text-transform: capitalize; }
+  a.btn { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 600;
+          color: var(--accent); text-decoration: none; }
+  a.btn:hover { text-decoration: underline; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 28px; }
+  .empty { padding: 24px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Your bathroom project list</h1>
+    <p>Put together with Hank, your Project Pro. Grouped in the order you'll tackle it.</p>
+  </header>
+  <div id="app"><p class="empty">Loading your list…</p></div>
+  <p class="note">Prices are illustrative estimates captured October 27, 2026. Confirm prices and availability at checkout.
+  Project Pro is an independent concept demo and is not affiliated with The Home Depot.</p>
+</main>
+<script>
+const CATEGORIES = ["vanity","faucet","toilet","mirror_cabinet","vanity_light",
+                    "exhaust_fan","flooring","paint","accessories","install_supplies"];
+const STAGES = [
+  ["Prep and paint", ["paint"]],
+  ["Flooring", ["flooring"]],
+  ["Vanity and plumbing", ["vanity","faucet","toilet","install_supplies"]],
+  ["Lighting and ventilation", ["vanity_light","exhaust_fan"]],
+  ["Finishing touches", ["mirror_cabinet","accessories"]],
+];
+const money = n => n.toLocaleString("en-US", { style: "currency", currency: "USD" });
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+
+function parseItems(raw) {
+  // "FAU-M:1,FLR-M:3" -> [{id:"FAU-M", qty:1}, ...]
+  return (raw || "").split(",").map(s => s.trim()).filter(Boolean).map(s => {
+    const [id, q] = s.split(":");
+    const qty = Math.max(1, Math.min(99, parseInt(q, 10) || 1));
+    return { id: id.trim().toUpperCase(), qty };
+  });
+}
+
+async function loadCatalog() {
+  const byId = {};
+  await Promise.all(CATEGORIES.map(async c => {
+    try {
+      const r = await fetch(c + ".json");
+      if (!r.ok) return;
+      const d = await r.json();
+      d.products.forEach(p => { byId[p.product_id] = { ...p, category: c }; });
+    } catch (e) { /* skip a missing category */ }
+  }));
+  return byId;
+}
+
+(async () => {
+  const app = document.getElementById("app");
+  const wanted = parseItems(new URLSearchParams(location.search).get("items"));
+  if (!wanted.length) { app.innerHTML = '<p class="empty">No items on this list yet.</p>'; return; }
+  const catalog = await loadCatalog();
+  const lines = wanted.map(w => catalog[w.id] && { ...catalog[w.id], qty: w.qty }).filter(Boolean);
+  if (!lines.length) { app.innerHTML = '<p class="empty">We couldn’t find these items.</p>'; return; }
+
+  const total = lines.reduce((t, l) => t + (l.price_usd || 0) * l.qty, 0);
+  let html = `<div class="total"><span>Estimated total · ${lines.length} item${lines.length > 1 ? "s" : ""}</span><strong>${money(total)}</strong></div>`;
+  for (const [stage, cats] of STAGES) {
+    const inStage = lines.filter(l => cats.includes(l.category))
+                         .sort((a, b) => cats.indexOf(a.category) - cats.indexOf(b.category));
+    if (!inStage.length) continue;
+    html += `<h2>${esc(stage)}</h2>`;
+    for (const l of inStage) {
+      const unit = l.price_unit && l.price_unit !== "each" ? ` per ${esc(l.price_unit)}` : "";
+      html += `<div class="item">
+        <div class="row"><div class="name">${esc(l.name)}</div>
+        <div class="price">${money((l.price_usd || 0) * l.qty)}</div></div>
+        <div class="meta"><span class="tier">${esc(l.tier)}</span>Qty ${l.qty} × ${money(l.price_usd || 0)}${unit}</div>
+        <a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">View at Home Depot →</a>
+      </div>`;
+    }
+  }
+  app.innerHTML = html;
+})();
+</script>
+</body>
+</html>
