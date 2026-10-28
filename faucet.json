@@ -1,0 +1,37 @@
+{
+  "category": "faucet",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "FAU-B",
+      "tier": "budget",
+      "name": "Ladera Single Handle Single Hole Bathroom Faucet in Spot Defense Brushed Nickel",
+      "price_usd": 76.66,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/300721639",
+      "key_specs": "Single hole; brushed nickel",
+      "compatibility_notes": "Confirm whether a deck plate is included for 3-hole tops"
+    },
+    {
+      "product_id": "FAU-M",
+      "tier": "midrange",
+      "name": "Hensley Single Hole Single-Handle Bathroom Faucet in Spot Resist Brushed Nickel",
+      "price_usd": 119.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/206711350",
+      "key_specs": "1 or 3 hole install; deck plate included; brushed nickel",
+      "compatibility_notes": "Safest pairing: works with single-hole and 4 in. centerset tops"
+    },
+    {
+      "product_id": "FAU-P",
+      "tier": "premium",
+      "name": "Kingston Brass English Vintage Single Hole Single-Handle Bathroom Faucet in Brushed Nickel",
+      "price_usd": 172.25,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/309301309",
+      "key_specs": "Single hole; includes matching drain kit; brushed nickel",
+      "compatibility_notes": "Single hole only unless a deck plate is added; verify"
+    }
+  ]
+}

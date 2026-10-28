@@ -1,0 +1,37 @@
+{
+  "category": "install_supplies",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "SUP-1",
+      "tier": "essential",
+      "name": "Everbilt Standard Wax Ring Kit for Floor Mount Toilet",
+      "price_usd": 1.98,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/203724656",
+      "key_specs": "Wax ring with bolts",
+      "compatibility_notes": "Required whenever a toilet is removed or replaced"
+    },
+    {
+      "product_id": "SUP-2",
+      "tier": "essential",
+      "name": "Westbrass 1/2 in. Nominal Compression Lever Handle Angle Stop Toilet Installation Kit with Brass Supply Line in Satin Nickel",
+      "price_usd": 25.61,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/202551066",
+      "key_specs": "Shutoff valve + supply line + wax ring",
+      "compatibility_notes": "Recommended when replacing a toilet with an old shutoff valve; valve swap requires shutting off main water"
+    },
+    {
+      "product_id": "SUP-3",
+      "tier": "essential",
+      "name": "DAP Kwik Seal Plus 10.1 oz. Clear Premium Kitchen and Bath Siliconized Caulk",
+      "price_usd": 5.98,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/100163430",
+      "key_specs": "Waterproof kitchen and bath caulk",
+      "compatibility_notes": "Price is an illustrative estimate. Used around vanity top, backsplash, toilet base"
+    }
+  ]
+}

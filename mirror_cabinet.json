@@ -1,0 +1,37 @@
+{
+  "category": "mirror_cabinet",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "MIR-B",
+      "tier": "budget",
+      "name": "Dovelina 16 in. W x 24 in. H Rectangle Black Recessed/Surface Mount Medicine Cabinet with Mirror",
+      "price_usd": 143.74,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/324531310",
+      "key_specs": "16 x 24 in.; recessed or surface mount; black frame",
+      "compatibility_notes": "Surface mount is the DIY-friendly option; recessed requires cutting drywall"
+    },
+    {
+      "product_id": "MIR-M",
+      "tier": "midrange",
+      "name": "24 in. W x 30 in. H Rectangle Silver Aluminum Recessed or Surface Mount Medicine Cabinet with Mirror",
+      "price_usd": 262.7,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/321599232",
+      "key_specs": "24 x 30 in.; aluminum; was $289 at time seen (sale)",
+      "compatibility_notes": "Should be narrower than the vanity (30 in.)"
+    },
+    {
+      "product_id": "MIR-P",
+      "tier": "premium",
+      "name": "MAAX SV2030 20 in. x 30 in. Recessed or Surface Mount Medicine Cabinet in Single View Beveled Mirror",
+      "price_usd": 589.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/304726520",
+      "key_specs": "20 x 30 in.; 3 shelves; side mirrors included",
+      "compatibility_notes": "Fits above a 30 in. vanity"
+    }
+  ]
+}

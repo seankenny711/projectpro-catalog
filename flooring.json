@@ -1,0 +1,37 @@
+{
+  "category": "flooring",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "FLR-B",
+      "tier": "budget",
+      "name": "TrafficMaster Secret Harbor 6 MIL x 6 in. W x 36 in. L Click Lock Waterproof Luxury Vinyl Plank Flooring",
+      "price_usd": 41.77,
+      "price_unit": "case (23.95 sq ft)",
+      "url": "https://www.homedepot.com/p/321245994",
+      "key_specs": "$1.74/sq ft; 6 mil wear layer; pre-attached underlayment",
+      "compatibility_notes": "Buy room sq ft + 10% for cuts, rounded up to whole cases"
+    },
+    {
+      "product_id": "FLR-M",
+      "tier": "midrange",
+      "name": "Home Decorators Collection Alston Ridge 12 MIL x 7.2 in. W x 48 in. L Click Lock Waterproof Luxury Vinyl Plank Flooring",
+      "price_usd": 71.71,
+      "price_unit": "case (28.8 sq ft)",
+      "url": "https://www.homedepot.com/p/321049222",
+      "key_specs": "$2.49/sq ft (case price calculated, verify); 12 mil wear layer",
+      "compatibility_notes": "Buy room sq ft + 10%, rounded up to whole cases"
+    },
+    {
+      "product_id": "FLR-P",
+      "tier": "premium",
+      "name": "Shaw Pinecrest Quarry 20 MIL x 9 in. W x 59 in. L Click Lock Waterproof Luxury Vinyl Plank Flooring",
+      "price_usd": 91.3,
+      "price_unit": "case (21.79 sq ft)",
+      "url": "https://www.homedepot.com/p/303448862",
+      "key_specs": "$4.19/sq ft; 20 mil wear layer",
+      "compatibility_notes": "Buy room sq ft + 10%, rounded up to whole cases"
+    }
+  ]
+}

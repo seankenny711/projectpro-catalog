@@ -1,0 +1,37 @@
+{
+  "category": "toilet",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "TOI-B",
+      "tier": "budget",
+      "name": "Glacier Bay 12 in. Rough In 2-Piece 1.28 GPF Single Flush Elongated Toilet in White Seat Included",
+      "price_usd": 109.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/331755743",
+      "key_specs": "12 in. rough-in; elongated; 1.28 GPF; seat included",
+      "compatibility_notes": "Customer must measure rough-in (wall to bolt center); 12 in. is most common"
+    },
+    {
+      "product_id": "TOI-M",
+      "tier": "midrange",
+      "name": "KOHLER Joist 2-Piece Complete Solution 1.28 GPF Single Flush Elongated Toilet in White (Seat Included)",
+      "price_usd": 199.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/331238033",
+      "key_specs": "Elongated; 1.28 GPF; quiet-close seat included",
+      "compatibility_notes": "Verify rough-in size on product page"
+    },
+    {
+      "product_id": "TOI-P",
+      "tier": "premium",
+      "name": "American Standard H2Option Tall Height 2-piece 0.92/1.28 GPF Dual Flush Elongated Toilet in White, Seat Not Included",
+      "price_usd": 322.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/206981649",
+      "key_specs": "Tall (comfort) height; dual flush; was $500.99 at time seen (sale)",
+      "compatibility_notes": "SEAT NOT INCLUDED - agent must tell customer to add a seat; sale price may expire"
+    }
+  ]
+}

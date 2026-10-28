@@ -1,0 +1,37 @@
+{
+  "category": "exhaust_fan",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "FAN-B",
+      "tier": "budget",
+      "name": "Homewerks 80 CFM Easy Install Ceiling Mount Bathroom Exhaust Fan",
+      "price_usd": 50.99,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/312314432",
+      "key_specs": "80 CFM; rooms up to 80 sq ft; 1.5 sones; no attic access needed",
+      "compatibility_notes": "Replacement of an existing fan only; new ducting = pro"
+    },
+    {
+      "product_id": "FAN-M",
+      "tier": "midrange",
+      "name": "NuTone EZ Fit 80 CFM Ceiling Mount Bathroom Exhaust Fan, ENERGY STAR",
+      "price_usd": 93.11,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/205130123",
+      "key_specs": "80 CFM; rooms up to 75 sq ft; ENERGY STAR; room-side install",
+      "compatibility_notes": "Designed to replace existing fans"
+    },
+    {
+      "product_id": "FAN-P",
+      "tier": "premium",
+      "name": "ReVent 80 CFM Ceiling/Wall Bathroom Exhaust Fan with Adjustable LED Lighting & Humidity Sensing",
+      "price_usd": 155.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/307869393",
+      "key_specs": "80 CFM; humidity sensor; adjustable LED light; room-side install",
+      "compatibility_notes": "Light function may need wiring changes if old fan had no light"
+    }
+  ]
+}

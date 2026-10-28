@@ -1,0 +1,37 @@
+{
+  "category": "vanity_light",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "LGT-B",
+      "tier": "budget",
+      "name": "Mod Pod 22 in. 3-Light Brushed Nickel Bathroom Vanity Light Fixture with Frosted Glass Cylinder Shades",
+      "price_usd": 49.97,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/205420203",
+      "key_specs": "22 in. W; 3 lights; brushed nickel; was $59.99 (sale)",
+      "compatibility_notes": "Hardwired: replacing an existing fixture is common DIY; adding a new circuit or box = electrician"
+    },
+    {
+      "product_id": "LGT-M",
+      "tier": "midrange",
+      "name": "Progress Lighting Avalon Collection 24.75 in. 3-Light Brushed Nickel Vanity Light Alabaster Glass",
+      "price_usd": 170.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/100468346",
+      "key_specs": "24.75 in. W; 3 lights; alabaster glass",
+      "compatibility_notes": "Hardwired; width should not exceed vanity width"
+    },
+    {
+      "product_id": "LGT-P",
+      "tier": "premium",
+      "name": "Minka Lavery 3-Light Brushed Nickel Bath Light",
+      "price_usd": 379.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/204345348",
+      "key_specs": "25.5 in. W x 9.25 in. H; 3 x A19 bulbs (not included)",
+      "compatibility_notes": "Hardwired; bulbs not included"
+    }
+  ]
+}

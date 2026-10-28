@@ -1,0 +1,37 @@
+{
+  "category": "paint",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "PNT-B",
+      "tier": "budget",
+      "name": "Glidden Premium 1 gal. Satin Interior Latex Paint (color: Whirlwind)",
+      "price_usd": 25.98,
+      "price_unit": "gallon",
+      "url": "https://www.homedepot.com/p/309956118",
+      "key_specs": "Satin; covers ~400 sq ft per gallon per coat (typical)",
+      "compatibility_notes": "Plan 2 coats; small bathroom walls usually need 1-2 gallons"
+    },
+    {
+      "product_id": "PNT-M",
+      "tier": "midrange",
+      "name": "BEHR PREMIUM PLUS 1 gal. Ultra Pure White Satin Enamel Low Odor Interior Paint & Primer",
+      "price_usd": 35.98,
+      "price_unit": "gallon",
+      "url": "https://www.homedepot.com/p/202761538",
+      "key_specs": "Satin enamel; paint and primer; mildew resistant",
+      "compatibility_notes": "Satin is recommended for bathrooms"
+    },
+    {
+      "product_id": "PNT-P",
+      "tier": "premium",
+      "name": "1 gal. Deep Base Satin Enamel Interior Stain-Blocking Paint and Primer",
+      "price_usd": 66.98,
+      "price_unit": "gallon",
+      "url": "https://www.homedepot.com/p/315592423",
+      "key_specs": "Satin enamel; stain-blocking; mildew-resistant finish",
+      "compatibility_notes": "Deep base = tinted to darker colors; confirm brand on product page"
+    }
+  ]
+}

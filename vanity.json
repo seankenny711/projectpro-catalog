@@ -1,0 +1,37 @@
+{
+  "category": "vanity",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "VAN-B",
+      "tier": "budget",
+      "name": "Glacier Bay 30.5 in. Freestanding Bath Vanity in Golden Pecan with White Cultured Marble Top",
+      "price_usd": 159.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/203921940",
+      "key_specs": "30.5 in. W; top predrilled for 4 in. centerset faucet; fully assembled",
+      "compatibility_notes": "Faucet must fit 4 in. centerset (3-hole) or be single-hole with a deck plate"
+    },
+    {
+      "product_id": "VAN-M",
+      "tier": "midrange",
+      "name": "Glacier Bay Metaire 30 in. Single Sink Freestanding Oak Bath Vanity with White Engineered Marble Top (Assembled)",
+      "price_usd": 599.0,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/333273528",
+      "key_specs": "30 in. W x 20 in. D x 34.7 in. H; engineered marble top",
+      "compatibility_notes": "Check faucet hole configuration on product page before pairing"
+    },
+    {
+      "product_id": "VAN-P",
+      "tier": "premium",
+      "name": "Home Decorators Collection Acclaim 30 in. Single Sink White Bath Vanity with White Carrara Quartz Top (Assembled)",
+      "price_usd": 930.02,
+      "price_unit": "each",
+      "url": "https://www.homedepot.com/p/303334293",
+      "key_specs": "30 in. W x 22 in. D x 34 in. H; quartz top with undermount sink; soft-close drawers",
+      "compatibility_notes": "Faucet and backsplash NOT included; check faucet hole configuration"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "category": "accessories",
+  "prices_as_of": "2026-10-27",
+  "price_note": "Illustrative prices captured Oct 27, 2026; confirm at checkout.",
+  "products": [
+    {
+      "product_id": "ACC-B",
+      "tier": "budget",
+      "name": "WISBEAM 4-Piece Bath Hardware Set 20 in. with Mounting Hardware in Brushed Nickel",
+      "price_usd": 26.15,
+      "price_unit": "set",
+      "url": "https://www.homedepot.com/p/333289692",
+      "key_specs": "4 pieces; brushed nickel",
+      "compatibility_notes": "Match finish to faucet (brushed nickel)"
+    },
+    {
+      "product_id": "ACC-M",
+      "tier": "midrange",
+      "name": "5-Piece Bath Hardware Set with 2 Towel Bars, Towel/Robe Hook, Toilet Paper Holder in Brushed Nickel",
+      "price_usd": 43.99,
+      "price_unit": "set",
+      "url": "https://www.homedepot.com/p/326486193",
+      "key_specs": "5 pieces; brushed nickel; farmhouse style",
+      "compatibility_notes": "Match finish to faucet"
+    },
+    {
+      "product_id": "ACC-P",
+      "tier": "premium",
+      "name": "4-Piece Bath Hardware Set with Towel Bars, Towel Ring and Toilet Paper Holder in Brushed Nickel",
+      "price_usd": 200.27,
+      "price_unit": "set",
+      "url": "https://www.homedepot.com/p/331082441",
+      "key_specs": "4 pieces; brushed nickel",
+      "compatibility_notes": "Match finish to faucet"
+    }
+  ]
+}
